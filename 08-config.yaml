@@ -1,0 +1,7 @@
+kind: configMap
+apiVersion: v1
+metadata: 
+  name: sample-config
+data: 
+  course: DevOps
+  duration: "120 days"
