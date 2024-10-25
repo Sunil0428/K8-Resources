@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: samplelb
+spec:
+  selector:
+    project: expense
+    module: backend
+    environment: dev
+  type: LoadBalancer
+  ports:
+  - name: samplelb
+    port: 80
+    protocol: TCP
+    targetPort: 80
