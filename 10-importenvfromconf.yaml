@@ -3,9 +3,9 @@ apiVersion: v1
 metadata: 
   name: envconfig
 spec:
-  - containers:
-      name: nginx
-      image: nginx
-      envFrom:
-        - configMapRef:
-            name: nginx-config
+  containers:
+  - name: nginx
+    image: nginx
+    envFrom:
+    - configMapRef:
+        name: nginx-config
