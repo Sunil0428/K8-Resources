@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1 
+metadata:
+  name: sample-service
+spec:
+  selectors:
+    project: expense
+    module: backend
+    environment: dev
+  ports:
+  - name: sampleport
+    protocol: TCP
+    port: 80 # post of the service
+    targetport: 80 # This port of the container in the pod , this service is hitting
+
+
