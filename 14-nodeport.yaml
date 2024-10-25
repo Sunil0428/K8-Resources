@@ -1,14 +1,16 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: sample-service
+  name: sample-nodeport
 spec:
   selector:
     project: expense
     module: backend
     environment: dev
+  type: NodePort
   ports:
-  - name: sampleport
+  - name: samplenodeport
     protocol: TCP
-    port: 80 # port of the service
-    targetPort: 80 
+    port: 80
+    targetPort: 80
+    nodeport: 30007
