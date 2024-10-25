@@ -11,6 +11,6 @@ spec:
   - name: sampleport
     protocol: TCP
     port: 80 # port of the service
-    targetport: 80 # This port belongs to the container in the pod , this service is hitting
+    targetPort: 80 # This port belongs to the container in the pod , this service is hitting
 
 
